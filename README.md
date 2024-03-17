@@ -13,6 +13,8 @@ The solutions in this repository are organized by years. Typically, I aim to sol
 quickly as possible and then revisit my solutions later to refactor and to polish them. This is why 
 you'll find an original solution and a second, more comprehensive solution for each day.
 
+The implementations are done in Python
+
 I created this repository to reflect on my solutions and to compel myself to explain them. 
 The idea is to gain more insight into my own thought process through this practice.
 According to the Zen Of Python:
