@@ -11,7 +11,7 @@ These are my solutions for the puzzles provided by [Advent of Code](https://adve
 
 The solutions in this repository are organized by years. Typically, I aim to solve the puzzles as 
 quickly as possible and then revisit my solutions later to refactor and to polish them. This is why 
-you'll find an original solution and a second, more comprehensive solution for each day.
+you'll sometimes find an original solution and a second, more comprehensive one for a day.
 
 The implementations are done in Python
 
