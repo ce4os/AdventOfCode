@@ -1,5 +1,3 @@
-# Day 4: The Ideal Stocking Stuffer
-
 import hashlib
 
 def get_lowest_possible_dec(prefix):

@@ -1,4 +1,4 @@
-from utilities import get_puzzle_input_as_list
+from utils import get_puzzle_input_as_list
 
 package_dimensions = get_puzzle_input_as_list("src/day2_input")
 total_wrapping_paper = 0

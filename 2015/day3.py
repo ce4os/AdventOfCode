@@ -1,4 +1,4 @@
-from utilities import get_puzzle_input_as_string
+from utils import get_puzzle_input_as_string
 
 moves = get_puzzle_input_as_string("src/day3_input")
 

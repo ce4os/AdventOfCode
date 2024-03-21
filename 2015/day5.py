@@ -1,6 +1,7 @@
-# Day 5: Doesn't He Have Intern-Elves For This?
+#TODO: Refactor!
+
 import re
-from utilities import get_puzzle_input_as_list
+from utils import get_puzzle_input_as_list
 
 # Part 1 - Naughty or nice?
 santas_strings = get_puzzle_input_as_list("src/day5_input")

@@ -1,0 +1,22 @@
+## Thu Mar 21 08:47:19 AM CET 2024
+
+Having file util.py in every directory is a waste of space. 
+One solution could be
+ln -s FILE LINK
+but this is a solution on OS level and not "pythonic".
+
+As I go through my solutions and the process of refactoring, 
+I realize that I want to make code that I have written more 
+self documenting. So it became true: 
+
+"You will look upon a file with a fond sense of remembrance. 
+Then a sneaking feeling of foreboding, knowing that someone 
+less experienced, less wise, had written it."
+
+2016/day1 is giving me a hard time, the solution is bloated.
+Better leave it for now. Solutions sometimes come when you leave
+the problem alone.
+
+## Thu Mar 21 10:52:07 PM CET 2024
+
+import this!

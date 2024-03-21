@@ -1,6 +1,5 @@
-# Day 6: Probably a Fire Hazard 
 import re
-from utilities import get_puzzle_input_as_list
+from utils import get_puzzle_input_as_list
 
 instructions = get_puzzle_input_as_list("src/day6_input")
 
@@ -11,10 +10,8 @@ def build_rectangle(min_x, max_x, min_y, max_y):
             rectangle.append((y,x))
     return rectangle
 
-grid_without_state = build_rectangle(0,1000, 0, 1000)
-
-# Grid for Part 1
-grid = {light: [-1, 0] for light in grid_without_state}
+grid_without_states = build_rectangle(0,1000, 0, 1000)
+grid = {light: [-1, 0] for light in grid_without_states}
 
 for instruction in instructions:
     corners = [int(x) for x in re.findall("\d+", instruction)]
@@ -38,8 +35,6 @@ for state in grid.values():
         result_part1 += 1
     total_brightness += state[1]
     
-
-
 # Results
 print(result_part1)
 print(total_brightness)

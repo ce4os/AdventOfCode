@@ -1,4 +1,4 @@
-from utilities import get_puzzle_input_as_string
+from utils import get_puzzle_input_as_string
 
 directions = get_puzzle_input_as_string("src/day1_input")
 
@@ -19,5 +19,5 @@ def process_instructions2(directions: str):
             return position + 1
 
 # Results
-print(santas_floor = process_instructions(directions))
-print(position = process_instructions2(directions))
+print(process_instructions(directions))
+print(process_instructions2(directions))
