@@ -9,6 +9,7 @@ moves = get_puzzle_input_as_string("src/day3_input")
 
 # Part 1 - Instructions from an egnogged elf
 def get_visitied_houses(moves: str) -> list:
+    """"""
     coordinates = [0,0]
     visited_houses = [(0,0)]
     for move in moves:
