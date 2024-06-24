@@ -28,8 +28,9 @@ for string in santas_strings:
     start = 0
     end = 2
 
-    # 
+    # Parsing the string
     while True:
+        # Set pair and triplet
         pair = string[start:end]
         triplet = string[start:end + 1]
         
@@ -40,6 +41,8 @@ for string in santas_strings:
         # check letter which repeats with exactly one letter in between
         if triplet[0] == triplet[2]:
             repeating_letter = True 
+
+        # check two letters that appears at least twice in the string without overlapping
         segment = string[end:]
         if pair in segment:
             pair_appears_twice = True

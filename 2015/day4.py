@@ -2,7 +2,6 @@
 
 import hashlib
 
-
 # Define function
 def get_lowest_possible_dec(prefix: str, salt: str, decimal: int) -> int:
     """Calculates md5 hash of salt + dec; returns decimal if hash startswith prefix, else dec += 1"""

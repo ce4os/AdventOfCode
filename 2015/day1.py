@@ -9,7 +9,7 @@ directions = get_puzzle_input_as_string("src/day1_input")
 
 # Part 1 - Santa delivers presents in a large appartement building
 def process_instructions(directions: str) -> int:
-    """"""
+    """Calculates the floor of the apartement """
     floor = sum([1 if char == "(" else -1 for char in directions])
     return floor
 
