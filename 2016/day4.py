@@ -4,9 +4,6 @@ import re
 from utils import get_puzzle_input_as_list 
 from collections import Counter
 
-
-filename = "day4_demofile.txt"
-filename = "day4_data.txt"
 rooms = get_puzzle_input_as_list("src/day4_input")
 number_of_valid_rooms = 0 
 sum_sector_ids = 0
@@ -58,7 +55,7 @@ alphabet = "abcdefghijklmnopqrstuvwxyz"
 
 decrypted_rooms = []
 # real_rooms = [["qzmt-zixmtkozy-ivhz", 343]]
-
+                  
 for room in real_rooms:
     cipher = room[0]
     cipher = cipher.replace("-", " ")
