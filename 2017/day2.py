@@ -36,8 +36,6 @@ def get_get_results_part1_and_part2(spreadsheet: str):
 
 result_part1, result_part2 = get_get_results_part1_and_part2(spread_sheet)
 
-# Part 2
-
 
 print("Result Part1: ", result_part1)
 print("Result Part2: ", result_part2)
