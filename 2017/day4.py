@@ -31,7 +31,6 @@ def passphrase_contains_anagram(passphrase_as_list_of_words: list) -> bool:
     return any([is_anagram(comb[0], comb[1]) for comb in all_combinations])
 
     
-
 def main():
     result_part1 = 0
     result_part2 = 0
