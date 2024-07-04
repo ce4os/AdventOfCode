@@ -12,19 +12,15 @@ def calculate_steps_to_escape(maze: list[int], puzzle_part: int) -> int:
             offset = maze[position]
         except IndexError:              # ending condition
             break
-        new_position = position + maze[position]
-        # condition for offset increase for puzzle_part 1
-        if puzzle_part == 1:
+        new_position = position + maze[position]        
+        if puzzle_part == 1:            # condition for offset increase for puzzle_part 1
             maze[position] += 1
-
-        # conditions for offset increase for puzzle_part 2
-        if puzzle_part == 2:
+        if puzzle_part == 2:            # conditions for offset increase for puzzle_part 2
             if maze[position] >= 3:
                 maze[position] -= 1
             else:
                 maze[position] += 1
         position = new_position
-
         steps += 1
     return steps
 
