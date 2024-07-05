@@ -10,6 +10,7 @@ def calculate_total_fuel_needed(module_masses: list[int]) -> int:
 
 
 def calculate_fuel(mass: int) -> int:
+    """calculates the fuel needed for a given mass, including the recursive calculation for the fuel needed for the fuel itself."""
     fuel = floor(mass / 3) - 2
     if fuel <= 0:
         return 0
@@ -19,11 +20,7 @@ def calculate_fuel(mass: int) -> int:
 def calculate_total_fuel_needed2(module_masses: list[int]) -> int:
     """Same as calculate_total_fuel_needed but fuel needed also treated as the mass of the module"""
     return sum([calculate_fuel(module_mass) for module_mass in module_masses])
-    total_fuel_needed = 0
-    for module_mass in module_masses:
-        total_fuel_needed += calculate_fuel(module_mass)
-    return total_fuel_needed
-
+    
 
 def main():
     # Init

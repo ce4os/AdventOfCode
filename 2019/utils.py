@@ -7,6 +7,7 @@ def get_puzzle_input_as_string(path_to_puzzle_input: str) -> str:
             content = f.read()
     except FileNotFoundError as err:
         print(err)
+        content = None
     return content
 
 def get_puzzle_input_as_list(path_to_puzzle_input: str) -> list:
@@ -16,4 +17,5 @@ def get_puzzle_input_as_list(path_to_puzzle_input: str) -> list:
             content = f.readlines()
     except FileNotFoundError as err:
         print(err)
+        # content = None
     return content
